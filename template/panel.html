@@ -1,0 +1,49 @@
+﻿<div class="wrap"> 
+	<form method="post" action="">
+		<fieldset>
+	  <legend><strong>carousel GALLERY <?php echo $id; ?>. Write in your Posts: [carousel_video <?php echo $id; ?> /]</strong></legend>
+
+			  <table width="100%" border="0" cellspacing="8" cellpadding="0">
+			    <tr>
+			      <td>Video URL's (Write the url for the youtube videos or the flv videos, a url video for line):</td>
+			      <td><textarea name="video<?php echo $id; ?>" cols="40" rows="8" id="video<?php echo $id; ?>"><?php echo $video; ?></textarea></td>
+			      <td>Video titles( a text for line):</td>
+			      <td><textarea name="titles<?php echo $id; ?>" cols="40" rows="8" id="titles<?php echo $id; ?>"><?php echo $titles; ?></textarea></td>
+		        </tr>
+                
+                
+			    <tr>
+                <td>Gallery Width(Number with px or %, default: 100%):</td>
+			      <td><input type='text' id='width<?php echo $id; ?>'  name='width<?php echo $id; ?>'  value='<?php echo $width; ?>'/></td>
+			      <td>Gallery Height (Number with px, default 300px):</td>
+			      <td><input type='text' id='height<?php echo $id; ?>'  name='height<?php echo $id; ?>'  value='<?php echo $height; ?>'/></td>
+			      
+		        </tr>
+                <tr>
+			      <td colspan="2">Thumbnail video capture size, number > 0 and  < 10 </td>
+			      <td colspan="2"><input type='text' id='row<?php echo $id; ?>'  name='row<?php echo $id; ?>'  value='<?php echo $row; ?>'/></td>
+			      
+		        </tr>
+			    <tr>
+			      <td>Thumbnail Width</td>
+			      <td><input type='text' id='widthi<?php echo $id; ?>'  name='widthi<?php echo $id; ?>'  value='<?php echo $widthi; ?>'/></td>
+			      <td>Thumbnail Height</td>
+			      <td><input type='text' id='heighti<?php echo $id; ?>'  name='heighti<?php echo $id; ?>'  value='<?php echo $heighti; ?>'/></td>
+		        </tr>
+			    <tr>
+			      <td>&nbsp;</td>
+			      <td></td>
+			      <td>&nbsp;</td>
+			      <td></td>
+		        </tr>
+      </table> <input name="id" type="hidden" id="id" value="<?php echo $id; ?>" /></td>
+	<input type='submit' name='' value='SAVE carousel <?php echo $id; ?>' />
+		 
+      </fieldset>
+	</form>		 
+  <form method="post" action="">
+	  <input name="borrar" type="hidden" id="borrar" value="<?php echo $id; ?>">
+     <input type='submit' name='' value='Delete carousel gallery <?php echo $id; ?>' />
+    </form>
+  <hr />
+</div>
